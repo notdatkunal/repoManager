@@ -4,8 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        form{
+            margin: auto;
+            border: 1px solid black;
+            padding: 5px;
+            width: fit-content;
+            text-align: center;
+        }
+       input{
+        margin: 5px;
+       }
+       label+input,label+label{
+        display: block;
+        margin: auto;
+       }
+       
+    </style>
 </head>
 <body>
-    <h1>hello world</h1>
+    <form action="" method="post">
+        <h2>Create a repository</h2>
+        <label for="">Repository Name</label>
+        
+        <input type="text" placeholder="REPOSITORY NAME" required>
+      
+        <input type="checkbox" required> 
+        <label for="">private</label>
+        
+        <label for="">Description</label>
+        
+        <input type="text" size="100" placeholder="this is your description">
+        
+        <input type="button" value="submit">
+    </form>
 </body>
 </html>
